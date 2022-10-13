@@ -7,6 +7,7 @@ def rotate(num):
     return int(''.join(num_str))
 
 #Вывод с вызовом функции
-print(rotate(input()))
+num = input('Введите число: ')
+print(rotate(num))
 
 #   by dunielco
