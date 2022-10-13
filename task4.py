@@ -1,7 +1,5 @@
 def sqr_n(a, n):
     eps = 0.001
-    a = float(a)
-    n = int(n)
     xi = 1
 
     while True:
@@ -12,8 +10,13 @@ def sqr_n(a, n):
 
     return xi_1
 
-a = input('Введите число: ')
-n = input('Введите степень: ')
+a = float(input('Введите число: '))
+n = int(input('Введите степень: '))
+
+if a < 0 or n <= 0:
+    print('Неверные значения!')
+    exit()
+
 print('Корень равен:', end=' ')
 print(sqr_n(a, n))
 
