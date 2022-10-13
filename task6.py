@@ -6,4 +6,7 @@ def factorial(num):
 
 #Ввод и вызов функции
 num = int(input('Число: '))
+print('Факториал: ', end='')
 print(factorial(num))
+
+#   by dunielco
